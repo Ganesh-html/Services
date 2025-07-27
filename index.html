@@ -3,62 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Just Repair</title>
-     <link rel="icon" type="image/jpg" href="Images/Logo.jpg">
+    <title>Just Repair</title>
+    <link rel="icon" type="image/jpg" href="Images/Logo.jpg">
 
-     <!-- Tailwind CSS (required by Flowbite) -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet" /> -->
-<script src="https://cdn.tailwindcss.com"></script>
-  <!-- Flowbite CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-
-    <style>
-        /* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }*/
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        } 
-
-        /* Top Info Bar */
-        .top-info-bar {
-            background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
-            color: white;
-            padding: 10px 0;
-            font-size: 14px;
-        }
-
-        .top-info-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-            flex-wrap: wrap;
-        }
-
-        .info-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin: 2px 0;
-        }
-
-        .info-icon {
-            font-size: 16px;
-        }
-
-        .info-text {
-            font-weight: 500;
-        }
-        </style>
-
+    <!-- Tailwind CSS (required by Flowbite) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
      <!-- Top Info Bar -->
@@ -66,19 +21,21 @@
         <div class="top-info-container">
             <div class="info-item">
                 <a href="tel:18002034250">
-                    <span class="info-icon">📞</span>
+                    <!-- <span class="info-icon">📞</span> -->
+                      <i class="fa-solid fa-phone"></i>
                     <span class="info-text">18002034250</span>
                 </a>
             </div>
             <div class="info-item">
                 <a href="">
                   <span class="info-icon">📍</span>
-                  <span class="info-text">Panth nagar, Ghatkopar-east, Mumbai</span>
+                  <span class="info-text">Panth nagar, Ghatkopar-east, Mumbai-400077</span>
                 </a>    
             </div>
             <div class="info-item">
                 <a href="mailto:Justrepair.co@gmail.com">
-                    <span class="info-icon">✉️</span>
+                    <!-- <span class="info-icon">✉️</span> -->
+                     <i class="fa-solid fa-envelope"></i>
                     <span class="info-text">Justrepair.co@gmail.com</span>
                 </a>
             </div>
@@ -88,8 +45,8 @@
 <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="Images/Logo.jpg" class="h-8" alt="Faizoooo Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">Faizoooo</span>
+        <img src="Images/Logo.jpg" class="h-8" alt="Justrepair" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap text-black">Just Repair</span>
     </a>
     <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-dropdown" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -132,12 +89,12 @@
 </nav>
 
 
-<div id="controls-carousel" class="relative w-full" data-carousel="static">
+<div id="controls-carousel" class="relative w-full" data-carousel="slide">
   <!-- Carousel wrapper -->
   <div class="relative h-[450px] md:h-[800px] overflow-hidden rounded-lg">
     <!-- Item 1 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img src="Images/service2-2.png" class="block w-full h-full object-cover" alt="...">
+    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+      <img src="Images/ac_service.jpg" class="block w-full h-full object-cover" alt="...">
       <div class="absolute bottom-10 right-10 bg-white bg-opacity-70 p-4 rounded-lg text-right max-w-md">
         <h2 class="text-orange-500 text-xl font-semibold">Expert AC Servicing</h2>
         <p class="text-gray-700 text-sm">Efficient, Professional & Quick Cooling Fix</p>
@@ -145,29 +102,29 @@
     </div>
 
     <!-- Item 2 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-      <img src="Images/services1-1.jpeg" class="block w-full h-full object-cover" alt="...">
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="Images/fridge.png" class="block w-full h-full object-cover" alt="...">
       <div class="absolute bottom-10 right-10 bg-white bg-opacity-70 p-4 rounded-lg text-right max-w-md">
-        <h2 class="text-orange-500 text-xl font-semibold">Expert AC Servicing</h2>
-        <p class="text-gray-700 text-sm">Efficient, Professional & Quick Cooling Fix</p>
+        <h2 class="text-orange-500 text-xl font-semibold">Fridge Repair/Servicing</h2>
+        <p class="text-gray-700 text-sm">Fast and reliable refrigerator troubleshooting & solutions</p>
       </div>
     </div>
 
     <!-- Item 3 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img src="Images/service1.jpg" class="block w-full h-full object-cover" alt="...">
+      <img src="Images/washing.jpeg" class="block w-full h-full object-cover" alt="...">
       <div class="absolute bottom-10 right-10 bg-white bg-opacity-70 p-4 rounded-lg text-right max-w-md">
-        <h2 class="text-orange-500 text-xl font-semibold">Geyser Maintenance Service</h2>
-        <p class="text-gray-700 text-sm">Safe and Timely Hot Water Repair at Home</p>
+        <h2 class="text-orange-500 text-xl font-semibold">Washing Machine Service</h2>
+        <p class="text-gray-700 text-sm">Efficient washing machine repair and performance check</p>
       </div>
     </div>
 
     <!-- Item 4 -->
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img src="Images/service3.jpg" class="block w-full h-full object-cover" alt="...">
+      <img src="Images/oven.jpg" class="block w-full h-full object-cover" alt="...">
       <div class="absolute bottom-10 right-10 bg-white bg-opacity-70 p-4 rounded-lg text-right max-w-md">
-        <h2 class="text-orange-500 text-xl font-semibold">Geyser Maintenance Service</h2>
-        <p class="text-gray-700 text-sm">Safe and Timely Hot Water Repair at Home</p>
+        <h2 class="text-orange-500 text-xl font-semibold">Microwave Oven Repair</h2>
+        <p class="text-gray-700 text-sm">Quick and safe microwave servicing for all models</p>
       </div>
     </div>
 
@@ -175,8 +132,8 @@
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
       <img src="Images/about-us.jpg" class="block w-full h-full object-cover" alt="...">
       <div class="absolute bottom-10 right-10 bg-white bg-opacity-70 p-4 rounded-lg text-right max-w-md">
-        <h2 class="text-orange-500 text-xl font-semibold">Geyser Maintenance Service</h2>
-        <p class="text-gray-700 text-sm">Safe and Timely Hot Water Repair at Home</p>
+        <h2 class="text-orange-500 text-xl font-semibold">All Home Appliance Services</h2>
+        <p class="text-gray-700 text-sm">Expert Repairs for Every Appliance - Fast, Reliable, Affordable</p>
       </div>
     </div>
   </div>
@@ -213,7 +170,7 @@
       <h2 class="text-3xl font-bold text-gray-800 mb-2">About Us</h2>
       <h3 class="text-xl font-semibold text-orange-600 mb-4">What Can We Do</h3>
       <p class="text-gray-600 mb-4">
-        Siemens Service Centre is one of the leading home appliance service & repair providers.
+        Just Repair Service Centre is one of the leading home appliance service & repair providers.
         We offer complete repairing services for various electronic items such as Microwave Oven, Air Conditioner,
         Washing machine, Refrigerator, Dishwasher, Hub Chimini and Dryer.
       </p>
@@ -268,7 +225,7 @@
 
       <!-- Copy the card above 7 more times (total 8) -->
       <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-        <img class="w-full h-48 object-cover" src="Images/Service1.jpg" alt="Service">
+        <img class="w-full h-48 object-cover" src="Images/ac_service.jpg" alt="Service">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2 text-gray-800">AC Servicing</h3>
           <p class="text-gray-600 mb-4">Keep your AC running efficiently all year round.</p>
@@ -283,7 +240,7 @@
 
       <!-- Repeat similarly -->
       <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-        <img class="w-full h-48 object-cover" src="Images/service4.jpg" alt="Service">
+        <img class="w-full h-48 object-cover" src="Images/fridge.png" alt="Service">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2 text-gray-800">Refrigerator Repair</h3>
           <p class="text-gray-600 mb-4">Fast and reliable fridge repair by certified technicians.</p>
@@ -297,7 +254,7 @@
       </div>
 
       <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-        <img class="w-full h-48 object-cover" src="Images/services1-1.jpeg" alt="Service">
+        <img class="w-full h-48 object-cover" src="Images/washing.jpeg" alt="Service">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2 text-gray-800">Washing Machine Service</h3>
           <p class="text-gray-600 mb-4">Ensure your washer performs optimally with our service.</p>
@@ -312,7 +269,7 @@
 
       <!-- Add 4 more cards similarly -->
       <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-        <img class="w-full h-48 object-cover" src="Images/service5.jpg" alt="Service">
+        <img class="w-full h-48 object-cover" src="Images/oven.jpg" alt="Service">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2 text-gray-800">Microwave Repair</h3>
           <p class="text-gray-600 mb-4">Quick repair for all microwave models & brands.</p>
@@ -326,7 +283,7 @@
       </div>
 
       <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-        <img class="w-full h-48 object-cover" src="Images/Service2.jpg" alt="Service">
+        <img class="w-full h-48 object-cover" src="Images/Kitchen.jpg" alt="Service">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2 text-gray-800">Dishwasher Service</h3>
           <p class="text-gray-600 mb-4">Keep your dishwasher running quietly & efficiently.</p>
@@ -340,7 +297,7 @@
       </div>
 
       <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-        <img class="w-full h-48 object-cover" src="Images/services1-1.jpeg" alt="Service">
+        <img class="w-full h-48 object-cover" src="Images/washing_machiene.jpg" alt="Service">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2 text-gray-800">Dryer Repair</h3>
           <p class="text-gray-600 mb-4">Expert care for all your dryer problems & models.</p>
@@ -354,7 +311,7 @@
       </div>
 
       <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
-        <img class="w-full h-48 object-cover" src="Images/service6.jpg" alt="Service">
+        <img class="w-full h-48 object-cover" src="Images/chimney.jpg" alt="Service">
         <div class="p-5">
           <h3 class="text-xl font-semibold mb-2 text-gray-800">Chimney Cleaning</h3>
           <p class="text-gray-600 mb-4">Complete chimney & hob service for your kitchen.</p>
@@ -385,29 +342,7 @@
 </section>
 <section class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
-    <!-- Contact Info -->
-    <!-- <div class="space-y-4">
-      <h2 class="text-3xl font-bold text-gray-800">Get in touch</h2>
-      <p class="text-orange-600 font-semibold">Contact Information</p>
-      <div class="flex items-center text-gray-700 space-x-2">
-        <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 10 6a2.5 2.5 0 0 1 0 5.5z"/>
-        </svg>
-        <span>Mumbai 560078, Maharashtra</span>
-      </div>
-      <div class="flex items-center text-gray-700 space-x-2">
-        <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h13A1.5 1.5 0 0 1 18 3.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 16.5v-13zM3.5 3a.5.5 0 0 0-.5.5V5l7 4 7-4V3.5a.5.5 0 0 0-.5-.5h-13zM17 6.236l-6.646 3.798a.5.5 0 0 1-.708 0L3 6.236V16.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V6.236z"/>
-        </svg>
-        <span>7400273066</span>
-      </div>
-      <div class="flex items-center text-gray-700 space-x-2">
-        <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M2.94 6.94a1.5 1.5 0 0 1 0-2.12L6.88.88a1.5 1.5 0 0 1 2.12 0l2.88 2.88a1.5 1.5 0 0 1 0 2.12l-3.94 3.94a1.5 1.5 0 0 1-2.12 0L2.94 6.94zM13.5 10a.5.5 0 0 1 .5.5V15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1.586a1.5 1.5 0 0 1 .44-1.06l5.586-5.586a.5.5 0 0 1 .708 0l5.586 5.586A1.5 1.5 0 0 1 15 13.414V10.5a.5.5 0 0 1 .5-.5z"/>
-        </svg>
-        <span>Coolsmart514@gmail.com</span>
-      </div>
-    </div> -->
+  
 <div class="space-y-4 relative" x-data="{ copied: false }">
   <h2 class="text-3xl font-bold text-gray-800">Get in touch</h2>
   <p class="text-orange-600 font-semibold">Contact Information</p>
@@ -417,18 +352,15 @@
       <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
         <path d="M10 2C6.13 2 3 5.13 3 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 10 6a2.5 2.5 0 0 1 0 5.5z"/>
       </svg>
-      <span>Shop No.6 Naidu colony Panth nagar Ghatkopar east Mumbai</span>
+      <span>Shop No.6 Naidu colony Panth nagar Ghatkopar east Mumbai-400077</span>
     </div>
     <div class="flex items-center text-gray-700 space-x-2">
-      <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h13A1.5 1.5 0 0 1 18 3.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 16.5v-13zM3.5 3a.5.5 0 0 0-.5.5V5l7 4 7-4V3.5a.5.5 0 0 0-.5-.5h-13zM17 6.236l-6.646 3.798a.5.5 0 0 1-.708 0L3 6.236V16.5a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V6.236z"/>
-      </svg>
+     
+      <i class="fa-solid fa-phone text-orange-500"></i>
       <a href="https://wa.me/9739266001"><span>9739266001</span></a>
     </div>
     <div class="flex items-center text-gray-700 space-x-2">
-      <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M2.94 6.94a1.5 1.5 0 0 1 0-2.12L6.88.88a1.5 1.5 0 0 1 2.12 0l2.88 2.88a1.5 1.5 0 0 1 0 2.12l-3.94 3.94a1.5 1.5 0 0 1-2.12 0L2.94 6.94zM13.5 10a.5.5 0 0 1 .5.5V15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1.586a1.5 1.5 0 0 1 .44-1.06l5.586-5.586a.5.5 0 0 1 .708 0l5.586 5.586A1.5 1.5 0 0 1 15 13.414V10.5a.5.5 0 0 1 .5-.5z"/>
-      </svg>
+      <i class="fa-solid fa-envelope text-orange-500"></i>
       <span>Justrepair.co@gmail.com</span>
     </div>
   </div>
@@ -482,7 +414,7 @@
       <!-- Logo & brand -->
       <div class="mb-8 md:mb-0 flex items-center space-x-3">
         <img src="Images/Logo.jpg" class="h-10" alt="Logo" />
-        <span class="text-2xl font-semibold text-gray-800 dark:text-white">Faizoooo</span>
+        <span class="text-2xl font-semibold text-gray-800 dark:text-white">Just Repair</span>
       </div>
       <!-- Links -->
       <div class="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-3">
@@ -574,9 +506,10 @@
         </div>
         <a href="tel:18002034250"
            class="flex items-center justify-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3.5A1.5 1.5 0 013.5 2h2A1.5 1.5 0 017 3.5V5a1 1 0 01-.883.993L6 6H5v3a9 9 0 009 9h3v-1a1 1 0 01.117-1.993L17 15h1.5a1.5 1.5 0 011.493 1.356L20 17.5v2a1.5 1.5 0 01-1.356 1.493L18.5 21h-2C8.387 21 1 13.613 1 5.5v-2z"/>
-            </svg>
+            </svg> -->
+                  <i class="fa-solid fa-phone"></i>
             18002034250
         </a>
         <!-- WhatsApp Button -->
@@ -594,9 +527,10 @@
     <template x-if="!open">
         <button @click="open = true"
                 class="bg-orange-500 hover:bg-orange-600 text-white font-semibold flex items-center rounded-full px-4 py-2 shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3.5A1.5 1.5 0 013.5 2h2A1.5 1.5 0 017 3.5V5a1 1 0 01-.883.993L6 6H5v3a9 9 0 009 9h3v-1a1 1 0 01.117-1.993L17 15h1.5a1.5 1.5 0 011.493 1.356L20 17.5v2a1.5 1.5 0 01-1.356 1.493L18.5 21h-2C8.387 21 1 13.613 1 5.5v-2z"/>
-            </svg>
+            </svg> -->
+                  <i class="fa-solid fa-phone px-2"></i>
             Call Us
         </button>
     </template>
